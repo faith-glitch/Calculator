@@ -19,4 +19,31 @@ public class Calculator {
         double num1 = Double.parseDouble(input1);
         double num2 = Double.parseDouble(input2);
 
-       
+       while (true) {
+            // Display menu options
+            String choice = JOptionPane.showInputDialog(
+                "Select an option:\n" +
+                "1. Addition\n" +
+                "2. Subtraction\n" +
+                "3. Division\n" +
+                "4. Multiplication\n" +
+                "0. Exit"
+            );
+
+            // Check user choice and  operation
+            switch (choice) {
+                case "1":
+                    JOptionPane.showMessageDialog(null, "Result: " + (num1 + num2));
+                    break;
+                case "2":
+                    JOptionPane.showMessageDialog(null, "Result: " + (num1 - num2));
+                    break;
+                case "3":
+                                        if (num2 != 0) {
+                        JOptionPane.showMessageDialog(null, "Result: " + (num1 / num2));
+                    } else
+        
+    
+
+
+
