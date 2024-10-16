@@ -41,7 +41,26 @@ public class Calculator {
                 case "3":
                                         if (num2 != 0) {
                         JOptionPane.showMessageDialog(null, "Result: " + (num1 / num2));
-                    } else
+                    } else                    if (num2 != 0) {
+                        JOptionPane.showMessageDialog(null, "Result: " + (num1 / num2));
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Error: Division by zero is not allowed.");
+                    }
+                    break;
+                case "4":
+                    JOptionPane.showMessageDialog(null, "Result: " + (num1 * num2));
+                    break;
+                case "0":
+                    JOptionPane.showMessageDialog(null, "Exiting the program.");
+                    return; 
+                default:
+                    JOptionPane.showMessageDialog(null, "Calculation not recognized");
+            }
+        }
+    }
+}
+
+
         
     
 
